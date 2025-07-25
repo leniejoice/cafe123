@@ -221,12 +221,12 @@ async function fetchProducts() {
 
 // Function to dynamically render menu items (main section and full menu modal)
 function renderMenuItems() {
-  // CORRECTED SELECTORS TO USE NEW IDs
+  // CORRECTED SELECTORS TO USE NEW IDs for main menu
   const coffeeMenuContainer = document.getElementById("coffee-menu-grid");
   const pastryMenuContainer = document.getElementById("pastry-menu-grid");
 
-  console.log("Coffee Menu Container:", coffeeMenuContainer); // DEBUG: Check if container is found
-  console.log("Pastry Menu Container:", pastryMenuContainer); // DEBUG: Check if container is found
+  console.log("Main Coffee Menu Container:", coffeeMenuContainer); // DEBUG: Check if container is found
+  console.log("Main Pastry Menu Container:", pastryMenuContainer); // DEBUG: Check if container is found
 
   if (coffeeMenuContainer) coffeeMenuContainer.innerHTML = "";
   if (pastryMenuContainer) pastryMenuContainer.innerHTML = "";
@@ -234,34 +234,41 @@ function renderMenuItems() {
   const coffees = menuProducts
     .filter((item) => item.category === "Coffee & Beverages")
     .slice(0, 3);
-  // MODIFIED: Display only the first 3 pastries on the main page
   const pastries = menuProducts
     .filter((item) => item.category === "Pastries & Treats")
-    .slice(0, 3);
+    .slice(0, 3); // Display only first 3 pastries
 
-  console.log("Filtered Coffee items:", coffees); // DEBUG: Check filtered coffee items
-  console.log("Filtered Pastry items:", pastries); // DEBUG: Check filtered pastry items
+  console.log("Filtered Coffee items (main menu):", coffees); // DEBUG: Check filtered coffee items
+  console.log("Filtered Pastry items (main menu):", pastries); // DEBUG: Check filtered pastry items
 
   coffees.forEach((item) => {
     const itemHTML = createMenuItemHTML(item);
-    console.log(`Generated HTML for Coffee '${item.name}':`, itemHTML); // DEBUG: Log generated HTML
+    console.log(
+      `Generated HTML for Coffee '${item.name}' (main menu):`,
+      itemHTML
+    ); // DEBUG: Log generated HTML
     if (coffeeMenuContainer) coffeeMenuContainer.innerHTML += itemHTML;
   });
   pastries.forEach((item) => {
     const itemHTML = createMenuItemHTML(item);
-    console.log(`Generated HTML for Pastry '${item.name}':`, itemHTML); // DEBUG: Log generated HTML
+    console.log(
+      `Generated HTML for Pastry '${item.name}' (main menu):`,
+      itemHTML
+    ); // DEBUG: Log generated HTML
     if (pastryMenuContainer) pastryMenuContainer.innerHTML += itemHTML;
   });
 
   // Render full menu modal
-  // These selectors are still using the more complex querySelector, but they are for the modal,
-  // which seems to be working based on the previous context.
-  const fullMenuCoffeeContainer = document.querySelector(
-    "#full-menu-modal .grid.grid-cols-1.md\\:grid-cols-2.gap-6:nth-of-type(1)"
+  // UPDATED SELECTORS TO USE NEW IDs for full menu modal
+  const fullMenuCoffeeContainer = document.getElementById(
+    "full-menu-coffee-grid"
   );
-  const fullMenuPastryContainer = document.querySelector(
-    "#full-menu-modal .grid.grid-cols-1.md\\:grid-cols-2.gap-6:nth-of-type(2)"
+  const fullMenuPastryContainer = document.getElementById(
+    "full-menu-pastry-grid"
   );
+
+  console.log("Full Menu Coffee Container:", fullMenuCoffeeContainer); // DEBUG: Check if container is found
+  console.log("Full Menu Pastry Container:", fullMenuPastryContainer); // DEBUG: Check if container is found
 
   if (fullMenuCoffeeContainer) fullMenuCoffeeContainer.innerHTML = "";
   if (fullMenuPastryContainer) fullMenuPastryContainer.innerHTML = "";
@@ -269,14 +276,24 @@ function renderMenuItems() {
   menuProducts
     .filter((item) => item.category === "Coffee & Beverages")
     .forEach((item) => {
+      const itemHTML = createFullMenuItemHTML(item);
+      console.log(
+        `Generated HTML for Coffee '${item.name}' (full menu):`,
+        itemHTML
+      ); // DEBUG: Log generated HTML
       if (fullMenuCoffeeContainer)
-        fullMenuCoffeeContainer.innerHTML += createFullMenuItemHTML(item);
+        fullMenuCoffeeContainer.innerHTML += itemHTML;
     });
   menuProducts
     .filter((item) => item.category === "Pastries & Treats")
     .forEach((item) => {
+      const itemHTML = createFullMenuItemHTML(item);
+      console.log(
+        `Generated HTML for Pastry '${item.name}' (full menu):`,
+        itemHTML
+      ); // DEBUG: Log generated HTML
       if (fullMenuPastryContainer)
-        fullMenuPastryContainer.innerHTML += createFullMenuItemHTML(item);
+        fullMenuPastryContainer.innerHTML += itemHTML;
     });
 
   // Re-attach event listeners to new "Add to Cart" buttons
