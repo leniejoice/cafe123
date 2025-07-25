@@ -66,7 +66,7 @@ let cart = [];
 let menuProducts = []; // To store products fetched from the backend
 
 // Backend API URL - IMPORTANT: Ensure this matches your backend server's address and port
-const API_URL = "http://localhost:3000/api";
+const API_URL = "https://cafe-api-m7b5.onrender.com/api";
 
 // Function to fetch products from the backend
 async function fetchProducts() {
@@ -284,6 +284,8 @@ function renderMenuItems() {
       if (fullMenuCoffeeContainer)
         fullMenuCoffeeContainer.innerHTML += itemHTML;
     });
+  // For the full menu modal, we want ALL pastries, not just the first 3
+  // REMOVED .slice(0, 3) for full menu pastry display
   menuProducts
     .filter((item) => item.category === "Pastries & Treats")
     .forEach((item) => {
