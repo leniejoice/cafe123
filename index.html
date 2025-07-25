@@ -9,9 +9,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap"
     />
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Navigation -->
     <nav class="bg-[#5E3A1E] text-white py-4 px-6 sticky top-0 z-50 shadow-md">
       <div class="container mx-auto flex justify-between items-center">
         <div class="flex items-center">
@@ -44,6 +46,7 @@
             class="hover:text-[#E6C9A8] transition duration-300"
             >Contact</a
           >
+          <!-- Shopping Cart Icon -->
           <button
             id="cart-icon"
             class="relative text-white hover:text-[#E6C9A8] transition duration-300"
@@ -70,6 +73,7 @@
           </button>
         </div>
         <div class="md:hidden flex items-center space-x-4">
+          <!-- Shopping Cart Icon for Mobile -->
           <button
             id="cart-icon-mobile"
             class="relative text-white focus:outline-none"
@@ -120,6 +124,7 @@
       </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="relative h-[80vh] bg-[#3C2415] overflow-hidden">
       <div class="absolute inset-0 opacity-30 hero-pattern"></div>
       <div class="container mx-auto px-6 relative h-full flex items-center">
@@ -193,6 +198,7 @@
                 />
               </svg>
             </div>
+            <!-- Steam animation -->
             <div class="absolute top-10 left-1/2 transform -translate-x-1/2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -250,6 +256,7 @@
       </div>
     </section>
 
+    <!-- Features Section -->
     <section class="py-16 px-6">
       <div class="container mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -311,7 +318,7 @@
               Location
             </h3>
             <p class="text-[#8B6B43]">123 Coffee Street</p>
-            <p class="text-[#8B6B43]">Brewville, CA 90210</p>
+            <p class="text-[#8B6B43]">Lipa City, Batangas</p>
           </div>
           <div
             class="bg-white p-8 rounded-xl shadow-lg border border-[#E6C9A8] text-center reveal"
@@ -344,6 +351,7 @@
       </div>
     </section>
 
+    <!-- Menu Section -->
     <section id="menu" class="py-16 px-6 bg-[#F0E6D8]">
       <div class="container mx-auto">
         <div class="text-center mb-12 reveal">
@@ -362,136 +370,12 @@
           >
             Coffee & Beverages
           </h3>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div
-              class="menu-item bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300"
-            >
-              <div class="h-48 bg-[#A67C52] relative">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 200 200"
-                  class="w-full h-full"
-                >
-                  <rect width="200" height="200" fill="#A67C52" />
-                  <path
-                    fill="#8B6B43"
-                    d="M140,80v80H60V80h15c0-8.3,6.7-15,15-15h20c8.3,0,15,6.7,15,15H140z"
-                  />
-                  <path fill="#5E3A1E" d="M125,80v10H75V80H125z" />
-                  <path fill="#E6C9A8" d="M115,100v40H85v-40H115z" />
-                  <path
-                    fill="#5E3A1E"
-                    d="M140,50v10H60V50h15c0-8.3,6.7-15,15-15h20c8.3,0,15,6.7,15,15H140z"
-                  />
-                  <path fill="#E6C9A8" d="M125,50v10H75V50H125z" />
-                </svg>
-              </div>
-              <div class="p-6">
-                <h4 class="playfair text-xl font-bold text-[#5E3A1E] mb-2">
-                  Signature Espresso
-                </h4>
-                <p class="text-[#8B6B43] mb-4">
-                  Our house blend with rich, bold flavor and caramel notes.
-                </p>
-                <p class="text-[#5E3A1E] font-bold">$3.95</p>
-                <button
-                  class="add-to-cart-btn mt-4 bg-[#A67C52] hover:bg-[#8B6B43] text-white font-medium py-2 px-4 rounded-lg transition duration-300 w-full"
-                  data-name="Signature Espresso"
-                  data-price="3.95"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-            <div
-              class="menu-item bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300"
-            >
-              <div class="h-48 bg-[#A67C52] relative">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 200 200"
-                  class="w-full h-full"
-                >
-                  <rect width="200" height="200" fill="#A67C52" />
-                  <path fill="#8B6B43" d="M140,60v100H60V60h80z" />
-                  <path fill="#E6C9A8" d="M130,70v80H70V70h60z" />
-                  <path fill="#5E3A1E" d="M130,70v10H70V70H130z" />
-                  <path
-                    fill="#FFFFFF"
-                    d="M120,90c0,11-9,20-20,20s-20-9-20-20s9-20,20-20S120,79,120,90z"
-                  />
-                  <path
-                    fill="#5E3A1E"
-                    d="M110,90c0,5.5-4.5,10-10,10s-10-4.5-10-10s4.5-10,10-10S110,84.5,110,90z"
-                  />
-                </svg>
-              </div>
-              <div class="p-6">
-                <h4 class="playfair text-xl font-bold text-[#5E3A1E] mb-2">
-                  Vanilla Latte
-                </h4>
-                <p class="text-[#8B6B43] mb-4">
-                  Espresso with steamed milk and vanilla syrup.
-                </p>
-                <p class="text-[#5E3A1E] font-bold">$4.50</p>
-                <button
-                  class="add-to-cart-btn mt-4 bg-[#A67C52] hover:bg-[#8B6B43] text-white font-medium py-2 px-4 rounded-lg transition duration-300 w-full"
-                  data-name="Vanilla Latte"
-                  data-price="4.50"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-            <div
-              class="menu-item bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300"
-            >
-              <div class="h-48 bg-[#A67C52] relative">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 200 200"
-                  class="w-full h-full"
-                >
-                  <rect width="200" height="200" fill="#A67C52" />
-                  <path
-                    fill="#5E3A1E"
-                    d="M130,50v20c0,16.6-13.4,30-30,30s-30-13.4-30-30V50H130z"
-                  />
-                  <path
-                    fill="#8B6B43"
-                    d="M120,50v20c0,11-9,20-20,20s-20-9-20-20V50H120z"
-                  />
-                  <path
-                    fill="#E6C9A8"
-                    d="M110,50v20c0,5.5-4.5,10-10,10s-10-4.5-10-10V50H110z"
-                  />
-                  <path
-                    fill="#FFFFFF"
-                    d="M130,120c0,5.5-4.5,10-10,10H80c-5.5,0-10-4.5-10-10v-10h60V120z"
-                  />
-                  <path
-                    fill="#E6C9A8"
-                    d="M130,140c0,5.5-4.5,10-10,10H80c-5.5,0-10-4.5-10-10v-10h60V140z"
-                  />
-                </svg>
-              </div>
-              <div class="p-6">
-                <h4 class="playfair text-xl font-bold text-[#5E3A1E] mb-2">
-                  Iced Caramel Macchiato
-                </h4>
-                <p class="text-[#8B6B43] mb-4">
-                  Espresso with milk, vanilla, and caramel drizzle.
-                </p>
-                <p class="text-[#5E3A1E] font-bold">$5.25</p>
-                <button
-                  class="add-to-cart-btn mt-4 bg-[#A67C52] hover:bg-[#8B6B43] text-white font-medium py-2 px-4 rounded-lg transition duration-300 w-full"
-                  data-name="Iced Caramel Macchiato"
-                  data-price="5.25"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
+          <!-- ADDED ID HERE -->
+          <div
+            id="coffee-menu-grid"
+            class="grid grid-cols-1 md:grid-cols-3 gap-6"
+          >
+            <!-- Menu items will be dynamically loaded here by JavaScript -->
           </div>
         </div>
 
@@ -501,138 +385,12 @@
           >
             Pastries & Treats
           </h3>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div
-              class="menu-item bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300"
-            >
-              <div class="h-48 bg-[#A67C52] relative">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 200 200"
-                  class="w-full h-full"
-                >
-                  <rect width="200" height="200" fill="#A67C52" />
-                  <path
-                    fill="#E6C9A8"
-                    d="M150,100c0,27.6-22.4,50-50,50s-50-22.4-50-50s22.4-50,50-50S150,72.4,150,100z"
-                  />
-                  <path
-                    fill="#8B6B43"
-                    d="M130,100c0,5.5-4.5,10-10,10s-10-4.5-10-10s4.5-10,10-10S130,90.5,130,100z"
-                  />
-                  <path
-                    fill="#8B6B43"
-                    d="M90,100c0,5.5-4.5,10-10,10s-10-4.5-10-10s4.5-10,10-10S90,90.5,90,100z"
-                  />
-                  <path
-                    fill="#8B6B43"
-                    d="M110,130c0,5.5-4.5,10-10,10s-10-4.5-10-10s4.5-10,10-10S110,125.5,110,130z"
-                  />
-                  <path
-                    fill="#8B6B43"
-                    d="M110,70c0,5.5-4.5,10-10,10s-10-4.5-10-10s4.5-10,10-10S110,65.5,110,70z"
-                  />
-                </svg>
-              </div>
-              <div class="p-6">
-                <h4 class="playfair text-xl font-bold text-[#5E3A1E] mb-2">
-                  Chocolate Chip Cookie
-                </h4>
-                <p class="text-[#8B6B43] mb-4">
-                  Freshly baked with premium chocolate chunks.
-                </p>
-                <p class="text-[#5E3A1E] font-bold">$2.95</p>
-                <button
-                  class="add-to-cart-btn mt-4 bg-[#A67C52] hover:bg-[#8B6B43] text-white font-medium py-2 px-4 rounded-lg transition duration-300 w-full"
-                  data-name="Chocolate Chip Cookie"
-                  data-price="2.95"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-            <div
-              class="menu-item bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300"
-            >
-              <div class="h-48 bg-[#A67C52] relative">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 200 200"
-                  class="w-full h-full"
-                >
-                  <rect width="200" height="200" fill="#A67C52" />
-                  <path fill="#E6C9A8" d="M140,70v60H60V70l40-20L140,70z" />
-                  <path fill="#8B6B43" d="M130,80v40H70V80l30-15L130,80z" />
-                  <path fill="#5E3A1E" d="M120,90v20H80V90l20-10L120,90z" />
-                  <path fill="#E6C9A8" d="M110,100v5H90v-5l10-5L110,100z" />
-                </svg>
-              </div>
-              <div class="p-6">
-                <h4 class="playfair text-xl font-bold text-[#5E3A1E] mb-2">
-                  Almond Croissant
-                </h4>
-                <p class="text-[#8B6B43] mb-4">
-                  Buttery layers with almond cream filling.
-                </p>
-                <p class="text-[#5E3A1E] font-bold">$4.25</p>
-                <button
-                  class="add-to-cart-btn mt-4 bg-[#A67C52] hover:bg-[#8B6B43] text-white font-medium py-2 px-4 rounded-lg transition duration-300 w-full"
-                  data-name="Almond Croissant"
-                  data-price="4.25"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-            <div
-              class="menu-item bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300"
-            >
-              <div class="h-48 bg-[#A67C52] relative">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 200 200"
-                  class="w-full h-full"
-                >
-                  <rect width="200" height="200" fill="#A67C52" />
-                  <path
-                    fill="#5E3A1E"
-                    d="M140,120c0,11-9,20-20,20H80c-11,0-20-9-20-20V80c0-11,9-20,20-20h40c11,0,20,9,20,20V120z"
-                  />
-                  <path
-                    fill="#8B6B43"
-                    d="M130,110c0,5.5-4.5,10-10,10H80c-5.5,0-10-4.5-10-10V90c0-5.5,4.5-10,10-10h40c5.5,0,10,4.5,10,10V110z"
-                  />
-                  <path
-                    fill="#E6C9A8"
-                    d="M120,100c0,11-9,20-20,20s-20-9-20-20s9-20,20-20S120,89,120,100z"
-                  />
-                  <path
-                    fill="#FFFFFF"
-                    d="M110,100c0,5.5-4.5,10-10,10s-10-4.5-10-10s4.5-10,10-10S110,94.5,110,100z"
-                  />
-                  <path
-                    fill="#5E3A1E"
-                    d="M105,100c0,2.8-2.2,5-5,5s-5-2.2-5-5s2.2-5,5-5S105,97.2,105,100z"
-                  />
-                </svg>
-              </div>
-              <div class="p-6">
-                <h4 class="playfair text-xl font-bold text-[#5E3A1E] mb-2">
-                  Blueberry Muffin
-                </h4>
-                <p class="text-[#8B6B43] mb-4">
-                  Moist muffin loaded with fresh blueberries.
-                </p>
-                <p class="text-[#5E3A1E] font-bold">$3.75</p>
-                <button
-                  class="add-to-cart-btn mt-4 bg-[#A67C52] hover:bg-[#8B6B43] text-white font-medium py-2 px-4 rounded-lg transition duration-300 w-full"
-                  data-name="Blueberry Muffin"
-                  data-price="3.75"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
+          <!-- ADDED ID HERE -->
+          <div
+            id="pastry-menu-grid"
+            class="grid grid-cols-1 md:grid-cols-3 gap-6"
+          >
+            <!-- Menu items will be dynamically loaded here by JavaScript -->
           </div>
         </div>
 
@@ -647,6 +405,7 @@
       </div>
     </section>
 
+    <!-- Full Menu Modal -->
     <div id="full-menu-modal" class="modal">
       <div class="modal-content p-8">
         <div class="flex justify-between items-center mb-6">
@@ -674,6 +433,7 @@
           </button>
         </div>
 
+        <!-- Coffee & Beverages -->
         <div class="mb-10">
           <h3
             class="playfair text-2xl font-bold text-[#5E3A1E] mb-6 pb-2 border-b-2 border-[#E6C9A8]"
@@ -681,223 +441,11 @@
             Coffee & Beverages
           </h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">
-                  Signature Espresso
-                </h4>
-                <p class="text-[#8B6B43]">
-                  Our house blend with rich, bold flavor and caramel notes.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$3.95</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Signature Espresso"
-                data-price="3.95"
-              >
-                Add
-              </button>
-            </div>
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">
-                  Americano
-                </h4>
-                <p class="text-[#8B6B43]">
-                  Espresso diluted with hot water for a milder flavor.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$3.50</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Americano"
-                data-price="3.50"
-              >
-                Add
-              </button>
-            </div>
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">
-                  Cappuccino
-                </h4>
-                <p class="text-[#8B6B43]">
-                  Equal parts espresso, steamed milk, and milk foam.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$4.25</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Cappuccino"
-                data-price="4.25"
-              >
-                Add
-              </button>
-            </div>
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">
-                  Vanilla Latte
-                </h4>
-                <p class="text-[#8B6B43]">
-                  Espresso with steamed milk and vanilla syrup.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$4.50</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Vanilla Latte"
-                data-price="4.50"
-              >
-                Add
-              </button>
-            </div>
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">
-                  Caramel Latte
-                </h4>
-                <p class="text-[#8B6B43]">
-                  Espresso with steamed milk and caramel syrup.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$4.75</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Caramel Latte"
-                data-price="4.75"
-              >
-                Add
-              </button>
-            </div>
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">Mocha</h4>
-                <p class="text-[#8B6B43]">
-                  Espresso with chocolate syrup and steamed milk.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$4.95</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Mocha"
-                data-price="4.95"
-              >
-                Add
-              </button>
-            </div>
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">
-                  Iced Caramel Macchiato
-                </h4>
-                <p class="text-[#8B6B43]">
-                  Espresso with milk, vanilla, and caramel drizzle.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$5.25</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Iced Caramel Macchiato"
-                data-price="5.25"
-              >
-                Add
-              </button>
-            </div>
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">
-                  Cold Brew
-                </h4>
-                <p class="text-[#8B6B43]">
-                  Slow-steeped for 12 hours for a smooth, rich flavor.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$4.75</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Cold Brew"
-                data-price="4.75"
-              >
-                Add
-              </button>
-            </div>
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">
-                  Chai Tea Latte
-                </h4>
-                <p class="text-[#8B6B43]">
-                  Spiced black tea with steamed milk.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$4.50</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Chai Tea Latte"
-                data-price="4.50"
-              >
-                Add
-              </button>
-            </div>
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">
-                  Matcha Green Tea Latte
-                </h4>
-                <p class="text-[#8B6B43]">
-                  Japanese matcha powder with steamed milk.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$5.25</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Matcha Green Tea Latte"
-                data-price="5.25"
-              >
-                Add
-              </button>
-            </div>
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">
-                  Hot Chocolate
-                </h4>
-                <p class="text-[#8B6B43]">
-                  Rich chocolate with steamed milk and whipped cream.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$4.25</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Hot Chocolate"
-                data-price="4.25"
-              >
-                Add
-              </button>
-            </div>
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">
-                  Fresh Fruit Smoothie
-                </h4>
-                <p class="text-[#8B6B43]">
-                  Seasonal fruits blended with yogurt and honey.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$5.95</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Fresh Fruit Smoothie"
-                data-price="5.95"
-              >
-                Add
-              </button>
-            </div>
+            <!-- Full menu items will be dynamically loaded here by JavaScript -->
           </div>
         </div>
 
+        <!-- Pastries & Treats -->
         <div class="mb-10">
           <h3
             class="playfair text-2xl font-bold text-[#5E3A1E] mb-6 pb-2 border-b-2 border-[#E6C9A8]"
@@ -905,117 +453,13 @@
             Pastries & Treats
           </h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">
-                  Chocolate Chip Cookie
-                </h4>
-                <p class="text-[#8B6B43]">
-                  Freshly baked with premium chocolate chunks.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$2.95</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Chocolate Chip Cookie"
-                data-price="2.95"
-              >
-                Add
-              </button>
-            </div>
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">
-                  Almond Croissant
-                </h4>
-                <p class="text-[#8B6B43]">
-                  Buttery layers with almond cream filling.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$4.25</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Almond Croissant"
-                data-price="4.25"
-              >
-                Add
-              </button>
-            </div>
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">
-                  Blueberry Muffin
-                </h4>
-                <p class="text-[#8B6B43]">
-                  Moist muffin loaded with fresh blueberries.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$3.75</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Blueberry Muffin"
-                data-price="3.75"
-              >
-                Add
-              </button>
-            </div>
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">Scone</h4>
-                <p class="text-[#8B6B43]">
-                  Classic scone, perfect with clotted cream and jam.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$3.25</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Scone"
-                data-price="3.25"
-              >
-                Add
-              </button>
-            </div>
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">
-                  Cinnamon Roll
-                </h4>
-                <p class="text-[#8B6B43]">
-                  Warm, gooey cinnamon roll with cream cheese frosting.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$4.50</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Cinnamon Roll"
-                data-price="4.50"
-              >
-                Add
-              </button>
-            </div>
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="playfair text-lg font-bold text-[#5E3A1E]">
-                  Vegan Brownie
-                </h4>
-                <p class="text-[#8B6B43]">
-                  Rich and fudgy, made with plant-based ingredients.
-                </p>
-              </div>
-              <p class="text-[#5E3A1E] font-bold">$3.95</p>
-              <button
-                class="add-to-cart-btn bg-[#A67C52] hover:bg-[#8B6B43] text-white text-sm py-1 px-3 rounded ml-4"
-                data-name="Vegan Brownie"
-                data-price="3.95"
-              >
-                Add
-              </button>
-            </div>
+            <!-- Full menu items will be dynamically loaded here by JavaScript -->
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Shopping Cart Modal -->
     <div id="cart-modal" class="modal">
       <div class="modal-content p-8">
         <div class="flex justify-between items-center mb-6">
@@ -1041,9 +485,11 @@
           </button>
         </div>
         <div id="cart-items" class="mb-6">
+          <!-- Cart items will be dynamically added here -->
           <p class="text-[#8B6B43]">Your cart is empty.</p>
         </div>
 
+        <!-- Customer Information Fields -->
         <div class="mb-6 space-y-4">
           <div>
             <label
@@ -1085,12 +531,13 @@
             ></textarea>
           </div>
         </div>
+
         <div
           class="flex justify-between items-center border-t-2 border-[#E6C9A8] pt-4"
         >
           <p class="playfair text-xl font-bold text-[#5E3A1E]">Total:</p>
           <p id="cart-total" class="playfair text-xl font-bold text-[#5E3A1E]">
-            $0.00
+            ₱0.00
           </p>
         </div>
         <button
@@ -1102,14 +549,15 @@
       </div>
     </div>
 
+    <!-- About Section -->
     <section id="about" class="py-16 px-6 bg-[#F8F3E9]">
       <div
         class="container mx-auto flex flex-col md:flex-row items-center gap-12"
       >
         <div class="md:w-1/2 reveal">
           <img
-            src="https://via.placeholder.com/600x400"
-            alt="About Us"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDYwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjRjBFNkQ4Ii8+CjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjUwMCIgaGVpZ2h0PSIzMDAiIHJ4PSIxMiIgZmlsbD0iI0ZGRkZGRiIvPgo8cmVjdCB4PSI3NSIgeT0iNzUiIHdpZHRoPSIxNTAiIGhlaWdodD0iMjUwIiByeD0iOCIgZmlsbD0iI0E2N0M1MiIvPgo8cmVjdCB4PSIzNzUiIHk9Ijc1IiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjI1MCIgcng9IjgiIGZpbGw9IiNBNjdDNSIvPgo8Y2lyY2xlIGN4PSIxNTAiIGN5PSIxMjUiIHI9IjQwIiBmaWxsPSIjNUUzQTFFIi8+CjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjEyNSIgcj0iNDAiIGZpbGw9IiM1RTNBMUUiLz4KPHBhdGggZD0iTTUwMCAyNzVsLTUwIDUwSDUwTDAgMjI1VjUwSDEwMFYxMjVDMTAwIDE0MS41NiAxMTMuNDM0IDE1NSAxMzAgMTU1SDE3MEMxODYuNTY2IDE1NSAyMDAgMTQxLjU2IDIwMCAxMjVWNTBIMjUwVjIyNUwzMDAgMjc1TDUwMCAyNzVaIiBmaWxsPSIjODk2QjQzIi8+CjxwYXRoIGQ9Ik0zMDAgMjI1TDM1MCAyNzVINjAwVjEwMEgzNTBMMzAwIDIyNVoiIGZpbGw9IiM1RTNBMUUiLz4KPHBhdGggZD0iTTI1MCA1MEgyNzVDMjg4Ljg0IDUwIDMwMCA2MS4xNTk3IDMwMCA3NVYxMjVDMzAwIDEzOC44NCAyODguODQgMTUwIDI3NSAxNTBIMjUwVjUwWiIgZmlsbD0iI0U2QzlBOCIvPgo8cmVjdCB4PSIyNzUiIHk9IjE3NSIgd2lkdGg9IjUwIiBoZWlnaHQ9IjUwIiByeD0iNSIgZmlsbD0iI0U2QzlBOCIvPgo8cGF0aCBkPSJNMjAwIDI3NUwyNTAgMzI1SDU1MFYyNzVMNTAwIDIyNUwyMDAgMjc1WiIgZmlsbD0iI0U2QzlBOCIvPgo8L3N2Zz4="
+            alt="About Us - Coffee Shop Interior Illustration"
             class="rounded-xl shadow-lg border-4 border-[#A67C52]"
           />
         </div>
@@ -1133,6 +581,7 @@
       </div>
     </section>
 
+    <!-- Testimonials Section -->
     <section class="py-16 px-6 bg-[#F0E6D8]">
       <div class="container mx-auto">
         <div class="text-center mb-12 reveal">
@@ -1155,7 +604,7 @@
             <p class="font-bold text-[#A67C52]">- Jane Doe</p>
           </div>
           <div
-            class="testimonial-card bg-white p-8 rounded-xl shadow-lg border border-[#E6C9A8] reveal"
+            class="testimonial-card bg-white p-8 rounded-xl shadow-lg border border-[#E6C9A1] reveal"
           >
             <p class="text-[#5E3A1E] italic mb-4">
               "Such a charming atmosphere and incredible service. The almond
@@ -1176,6 +625,7 @@
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="py-16 px-6 bg-[#F8F3E9]">
       <div class="container mx-auto text-center reveal">
         <h2 class="playfair text-4xl font-bold text-[#5E3A1E] mb-6">
@@ -1193,7 +643,7 @@
               Location
             </h3>
             <p class="text-[#8B6B43] mb-2">123 Coffee Street</p>
-            <p class="text-[#8B6B43] mb-4">Brewville, CA 90210</p>
+            <p class="text-[#8B6B43] mb-4">Lipa City, Batangas</p>
             <a
               href="https://maps.app.goo.gl/YourGoogleMapsLink"
               target="_blank"
@@ -1216,6 +666,7 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-[#3C2415] text-white py-8 px-6 mt-16">
       <div
         class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left"
@@ -1243,6 +694,7 @@
       </div>
     </footer>
 
+    <!-- Link to external JavaScript file -->
     <script src="script.js"></script>
   </body>
 </html>
